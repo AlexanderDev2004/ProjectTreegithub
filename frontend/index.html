@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GitHub Repo Tree Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GitHub Repo Tree Viewer</h1>
+        <p>Masukkan link repo GitHub untuk melihat struktur direktori dan file.</p>
+      <input
+        type="text"
+        id="repo-url"
+        placeholder="Masukkan link repo GitHub"
+      />
+      <button onclick="fetchTree()">Lihat Struktur</button>
+      <pre id="output"></pre>
+
+      <p>Made by <a href="https://github.com/AlexanderDev2004" target="_blank" rel="noopener noreferrer">Alexander Agung Raya</a></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
