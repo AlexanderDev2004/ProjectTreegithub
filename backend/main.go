@@ -20,7 +20,7 @@ type FileNode struct {
 
 func main() {
 	http.HandleFunc("/tree", handleRepoTree)
-	http.Handle("/", http.FileServer(http.Dir("../frontend"))) // Serve static files (index.html, style.css, script.js)
+	http.Handle("/", http.FileServer(http.Dir("../frontend"))) 
 
 	fmt.Println("Server running at http://localhost:8080")
 	err := http.ListenAndServe(":8080", nil)
